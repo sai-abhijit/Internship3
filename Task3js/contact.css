@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    width:100%;
+}
+select{
+    margin: 0 0 0 32;
+}
+.header{
+    background-color: #3399cc;
+    padding: 0.25%;
+}
+.main-heading{
+    font-family: ArialVerdana, sans-serif;   
+    color:#ffffff;
+    font-weight: 100;
+    margin: 20 0 25 20;
+    font-size: 53px;
+}
+.navigation-bar{
+    background-color: #333333;
+    display: flex;
+    height:38px;
+    padding: 0 0 0 18;
+}
+.nav-item{
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight:bold;
+    margin: 12 10 0 10;
+    text-decoration: none;
+}
+.vl{
+    border-left: 2px;
+    border-width: 4px;
+    border-color: white;
+    background-color: white;   
+}
+.nav-item:hover{
+    background-color: rgb(244, 141, 15);
+    margin: 0 10 0 10;
+    padding: 12 0 0 0;
+    border-width: 0 0 0 5;
+    border-color: white;
+    color: #262525f4;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight:bold;
+}
+.high-light{
+    background-color: rgb(244, 141, 15);
+    margin: 0 10 0 10;
+    padding: 12 6 0 6;
+    border-width: 0 0 0 5;
+    border-color: white;
+    color: #262525f4;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight:bold;
+}
+.error{
+    margin: 15 0 0 180;
+}
+.icon{
+    margin: 8 0 0 1063;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin:60 0 0 100;
+    border-width:1px;
+}
+.radio{
+    position: absolute;
+    left:300px;
+}
+label{
+    position:absolute;
+    left:320px;
+    margin-top: 2px;
+}
+.input-name{
+    font-family: ArialVerdana, sans-serif;
+    font-size:14px;
+    margin: 0 0 30 20;
+    font-weight: bold;
+}
+.text-box{
+    position: absolute;
+    left:300px;
+    height:24px;
+}
+.text-field{
+    margin:0 0 15 22;
+    height:150px;
+    width: 400px;
+}
+.button{
+    position:absolute;
+    left: 440px;
+    font-weight: bold;
+    height:24px;
+    width: 80px;
+    font-size: 12px;
+}
+.sub-heading{
+    margin: 0 0 0 20;
+    font-family: ArialVerdana, sans-serif;
+    font-size:14px;
+    font-weight: bold;
+}
+.text{
+    margin: 10 0 15 20;
+    font-family: ArialVerdana, sans-serif;
+    font-size:14px;
+}
+.send-msg{
+    margin:10 0 10 20;
+    width:120px;
+    height:22px;
+}
+.clear-form{
+    margin: 10 0 10 10;
+    width:120px;
+    height:22px;
+}

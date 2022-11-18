@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contact.css">
+        <script src="contact.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="main-heading">TECHNOVERT</div>
+        </div>
+        <div class="navigation-bar">
+            <div class="nav-item">HOME</div>
+            <div class="nav-item">SERVICES</div>
+            <div class="vl"></div>
+            <div class="nav-item"><a class="nav-item" href="index.html">CAREERS</a></div>
+            <div class="high-light">CONTACT</div>
+            <div class="nav-item icon"><img src="blog-icon.png"></div>
+        </div>
+        <div class="details">
+            <div class="input-name">My Name: <input type="text" class="text-box" id="name" onchange="validate_name()">*
+                <p id="name_error" class="error"></p>
+            </div>
+            <div class="input-name">My Email Address:<input type="text" class="text-box" id="email" onchange="validate_email()">*
+                <p id="email_error" class="error"></p></div>
+            <div class="input-name">My Gender :
+                <input class="radio" type="radio" name="gender" id="male" value="Sir" onclick="gender_check(this.value)"><label for="male">Male</label><br>
+                <input class="radio" type="radio" name="gender" id="female" value="Lady" onclick="gender_check(this.value)"><label for="female">Female</label>
+                <p id="gender_error" class="error"></p>
+            </div>
+            <div class="input-name">My Telephone Number:<input type="text" class="text-box" id="contact" onchange="validate_contact()">
+                <p id="contact_error" class="error"></div>
+            <div class="input-name">My Organization Name:<input type="text" class="text-box" id="organization" onchange="req_organization()">*
+                <p id="organization_error" class="error"></p>
+            </div>
+            <div class="input-name">My City:<input type="text" class="text-box" id="city"></div>
+            <div class="input-name">My State or Province:
+                <select id="state" class="input" onchange="change_promo()">
+                <option value="null" selected>Select a State or Province</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select></div>
+            <div class="input-name">Please Contact Me By:
+                <input class="radio" type="radio" name="contact_by" id="mail" value="req_email" onclick="contact_by_check(this.value)"><label for="mail">Email</label><br>
+                <input class="radio" type="radio" name="contact_by" id="mobile" value="req_contact" onclick="contact_by_check(this.value)"><label for="mobile">Phone</label><br>
+                <input class="radio" type="radio" name="contact_by" id="both" value="req_both" onclick="contact_by_check(this.value)"><label for="both">Both</label>
+                <p id="contact_by_error" class="error">
+            </div>
+            <div class="input-name">Promotion Code:
+                <input type="text" class="text-box" id="promo">
+            </div>
+            <div class="sub-heading">Optional Information</div>
+            <p class="text">This information is optional but it helps us to serve you better.</p>
+            <div class="input-name">My Website Address is:
+                <input type="text" class="text-box" id="website" onchange="validate_website()">
+                <p id="website_error" class="error"></p>
+            </div>
+            <div class="input-name">Tell Us More About Your Organization:</div>
+            <input type="text" class="text-field" id="text_field">
+            <div class="input-name">What I'd really like to know is:</div>
+            <input type="text" class="text-field" id="text_box">
+            <div class="buttons">
+                <button class="send-msg" onclick="check_form()">Send Message</button>
+                <button class="clear-form" onclick="reset_form()">Clear Form </button>
+                <p id="status" class="error"></p>
+            </div>
+        </div>
+    </body>
+</html>
